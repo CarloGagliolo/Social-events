@@ -8,7 +8,7 @@ function Home() {
   const [events, setEvents] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  // Usa l'API esposta dal backend Docker, se non c'è usa localhost
+  // Usa l'API esposta dal backend Docker. Su GitHub Pages (statico) chiamera' lo stesso host, il che fallira' ma eviterà errori CORS bloccanti rispetto a chiamare localhost forzatamente
   const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:3000';
 
   useEffect(() => {
