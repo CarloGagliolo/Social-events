@@ -6,7 +6,7 @@ import CreateEvent from './pages/CreateEvent';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Social-events/">
       <div className="app-container">
         <header>
           <Link to="/" style={{ textDecoration: 'none' }}>
