@@ -1,9 +1,9 @@
 name: Deploy Frontend to GitHub Pages
 
 on:
-  # Esegue l'action ogni volta che facciamo un "push" sul branch master
+  # Esegue l'action ogni volta che facciamo un "push" sul branch github-pages
   push:
-    branches: ["master", "main"]
+    branches: ["github-pages"]
     paths:
       - 'frontend/**'
   # Permette di lanciare la build manualmente dalla schermata Actions di GitHub
