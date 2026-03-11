@@ -4,8 +4,6 @@ on:
   # Esegue l'action ogni volta che facciamo un "push" sul branch github-pages
   push:
     branches: ["github-pages"]
-    paths:
-      - 'frontend/**'
   # Permette di lanciare la build manualmente dalla schermata Actions di GitHub
   workflow_dispatch:
 
