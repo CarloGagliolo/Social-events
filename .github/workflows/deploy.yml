@@ -41,7 +41,7 @@ jobs:
       - name: Carica l'Artefatto (i file compilati)
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './frontend/dist'
+          path: dist
 
   # Job 2: Pubblicare (Deploy) su GitHub Pages
   deploy:
